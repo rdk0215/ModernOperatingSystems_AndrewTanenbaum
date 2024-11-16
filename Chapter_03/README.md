@@ -37,8 +37,7 @@ Of course there were different approaches to how to implement it. The most basic
 ** (which is a form of **dynamic relocation**), which was similar to the solution described in the previous chapter
 . Every time process was loaded into memory it
  was assigned a value of **base register**, that was holding the memory address that indicated start of the
-  application. On the other side **limit register** was holding an address that indicated last memory cell used by
-   the program. Subtraction of **base register** and **limit register** should give as program length. **CPU** was
+  application. On the other side  **limit register** should give the program length. **CPU** was
     responsible to make calls to the memory addresses that took this registers under consideration
    . Below is a simple visualisation.
 
