@@ -431,7 +431,8 @@ Authors start this subchapter by specifying moments when *OS* is involved with *
  * **process execution time** - reset *MMU* and flush *TLB*
  * **page fault time** - read hardware registers, compute page that is missing, locate it on disc and load
  * **process termination time**  - release all the resource (**page table** entries, pages itself and disc space
-  where pages were swapped)
+  where pages were swapped).If some of the pages are shared with other processes, the pages in memory and on disk
+can be released only when the last process using them has terminated.
   
 Next comes exact instruction what happens when a **page fault** happens. Honestly, it will be best handled with just
  quoting the list.
